@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo img {
+    width: 100px;
+}
+
+h1 {
+
+    font-size: 3.5rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1;
+
+
+}
+
+.email-input-area {
+    margin: 40px 0 20px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    /* Added max-width */
+    height: 47px;
+}
+
+.email-input-area .email-input {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+    padding: 0 140px 0 25px;
+    transition: all .2s;
+    background: #F1F2F3;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, .1);
+    border: 1px solid transparent;
+}
+
+.email-input-area .email-input:focus {
+    border-color: #54BFBC;
+}
+
+.email-input-area .submit-btn {
+    width: 120px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-size: .9em;
+    border-radius: 0 40px 40px 0;
+    transition: all .3s;
+    background: #54BFBC;
+    color: #fff;
+    border: #54BFBC;
+}
+
+.email-input-area .submit-btn:hover {
+    background: black;
+}
+
+.icons {
+    list-style: none;
+}
+
+.right-section {
+    opacity: .8;
+    background: linear-gradient(to right bottom, #54BFBC, #818a91, #8D6932);
+    height: 100vh;
+    /* Added height to cover the full height of the viewport */
+    /* width: 100%; Added width to take the full space of the half page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section {
+    margin-left: 20px;
+}
+
+.launch-time {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 170px;
+    display: table;
+    /* height: 100%; */
+    width: 100%;
+}
+
+.launch-time div {
+    color: white;
+    flex-basis: 100px;
+    border: 3px solid white;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.launch-time div p {
+    color: white;
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+i {
+    color: #54BFBC;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .launch-time div {
+
+        border: none;
+        margin: 15px;
+
+        /* width: fit-content; */
+    }
+
+    .right-section {
+
+        height: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .left-section {
+        margin-left: 150px;
+    }
+
+    .icons {
+        margin-top: 130px;
+    }
+
+
+}
